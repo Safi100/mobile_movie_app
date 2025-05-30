@@ -1,5 +1,4 @@
 import MovieCard from "@/components/MovieCard";
-import SearchBar from "@/components/SearchBar";
 import TrendingCard from "@/components/TrendingCard";
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
@@ -53,12 +52,12 @@ export default function Index() {
           </Text>
         ) : (
           <View className="flex-1 mt-5">
-            <SearchBar
+            {/* <SearchBar
               onPress={() => {
                 router.push("/search");
               }}
               placeholder="Search for a movie"
-            />
+            /> */}
             {trendingMovies && (
               <>
                 <View className="mt-10">
